@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const navigateToTodolist = () => {
-    router.push("/Todolist");
+    router.push("/");
   };
 
   return (
