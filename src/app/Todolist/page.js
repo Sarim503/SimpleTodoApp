@@ -154,7 +154,7 @@ function Page() {
 
   return (
     <div className="w-[90%] md:w-[40%] min-h-[70vh] bg-blue-50 border border-blue-200 h-auto flex flex-col justify-start items-center mt-4 m-auto drop-shadow-md rounded-3xl">
-      <h1 className="font-bold text-2xl md:text-3xl mt-8">Todo App</h1>
+      <h1 className="font-bold text-2xl md:text-3xl mt-8 text-black">Todo App</h1>
       <form
         className="flex flex-wrap gap-4 justify-center items-center py-2 w-full"
         onSubmit={handleSubmit}
@@ -168,12 +168,12 @@ function Page() {
         />
         <button
           type="submit"
-          className="px-2 py-1.5 border-blue-400 rounded-md bg-blue-600 text-white hover:bg-blue-500 flex items-center space-x-2"
+          className="px-2 py-1.5 border-blue-400 rounded-md bg-blue-600 text-white hover:bg-blue-500 flex items-center space-x-2 text-black"
         >
           <MdAddCircleOutline size={25} />
         </button>
       </form>
-      <div className="w-full  bg-white rounded-lg mt-2 max-h-80 overflow-y-auto">
+      <div className="w-full  bg-white rounded-lg mt-2 max-h-80 overflow-y-auto text-black">
         {todos.length > 0 ? (
           <table className="w-full  bg-slate-50 border-separate border border-slate-200 rounded-lg mt-2 m-auto">
             <thead>
@@ -247,7 +247,7 @@ function Page() {
 
         {/* Delete Modal */}
         {isDeleteModalOpen && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 text-black">
             <div className="bg-white p-6 rounded-lg shadow-lg w-[300px]">
               <h2 className="text-1xl font-bold mb-4">
                 Are you sure you want to delete{" "}
@@ -273,7 +273,7 @@ function Page() {
 
         {/* Edit Modal */}
         {isEditModalOpen && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 text-black">
             <div className="bg-white p-6 rounded-lg shadow-lg w-[300px]">
               <h2 className="text-xl font-bold mb-4">Edit Todo</h2>
               <input
