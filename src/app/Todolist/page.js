@@ -103,11 +103,7 @@ function Page() {
       return;
     }
 
-<<<<<<< HEAD
   
-=======
-    // Check for duplicate values (ignoring extra spaces and comparing trimmed values)
->>>>>>> a59f0df23dc668145c9cb413edea3ae834ddf089
     if (
       todos.some(
         (todo) =>
@@ -151,15 +147,9 @@ function Page() {
   const truncateText = (text) => {
     const words = text.split(" ");
     if (words.length > 3) {
-<<<<<<< HEAD
       return words.slice(0, 3).join(" ") + " ..."; 
     }
     return text; 
-=======
-      return words.slice(0, 3).join(" ") + " ..."; // Truncate to 3 words and add '...'
-    }
-    return text; // If there are 3 or fewer words, return the whole text
->>>>>>> a59f0df23dc668145c9cb413edea3ae834ddf089
   };
 
   return (
@@ -178,24 +168,14 @@ function Page() {
         />
         <button
           type="submit"
-<<<<<<< HEAD
           className="px-2 py-1.5 border-blue-400 rounded-md bg-blue-600 text-white hover:bg-blue-500 flex items-center space-x-2"
-=======
-          className="px-2 py-1.5 border-blue-400 rounded-md bg-blue-600 text-white hover:bg-blue-500 flex items-center space-x-2 text-black"
->>>>>>> a59f0df23dc668145c9cb413edea3ae834ddf089
         >
           <MdAddCircleOutline size={25} />
         </button>
       </form>
-<<<<<<< HEAD
       <div className="w-full  bg-white rounded-lg mt-2 max-h-80 overflow-y-auto">
         {todos.length > 0 ? (
           <table className="w-full  bg-slate-50 border-separate border border-slate-200 rounded-lg mt-2 m-auto text-black">
-=======
-      <div className="w-full  bg-white rounded-lg mt-2 max-h-80 overflow-y-auto text-black">
-        {todos.length > 0 ? (
-          <table className="w-full  bg-slate-50 border-separate border border-slate-200 rounded-lg mt-2 m-auto">
->>>>>>> a59f0df23dc668145c9cb413edea3ae834ddf089
             <thead>
               <tr className="bg-gray-100 ">
                 <th className="px-4 py-2 text-left">
@@ -205,15 +185,9 @@ function Page() {
                     checked={selectAllChecked}
                   />
                 </th>
-<<<<<<< HEAD
                 <th className="px-4 py-2 text-left text-black">Todo Item</th>
                 <th className="px-4 py-2 text-left text-black">Created Time</th>
                 <th className="px-4 py-2 text-left text-black">Actions</th>
-=======
-                <th className="px-4 py-2 text-left">Todo Item</th>
-                <th className="px-4 py-2 text-left">Created Time</th>
-                <th className="px-4 py-2 text-left">Actions</th>
->>>>>>> a59f0df23dc668145c9cb413edea3ae834ddf089
               </tr>
             </thead>
             <tbody>
